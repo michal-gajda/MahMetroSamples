@@ -40,7 +40,6 @@
 
             if (disposing)
             {
-
             }
 
             this.disposed = true;
