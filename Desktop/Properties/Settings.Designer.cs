@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Gajda.ProofOfConcept.MahMetroSample.Properties {
+namespace Gajda.ProofOfConcept.MahMetroSample.Desktop.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

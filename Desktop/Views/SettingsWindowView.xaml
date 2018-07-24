@@ -1,0 +1,26 @@
+﻿<mah:MetroWindow x:Class="Gajda.ProofOfConcept.MahMetroSample.Desktop.Views.SettingsWindowView"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:behaviors="clr-namespace:Gajda.ProofOfConcept.MahMetroSample.Desktop.Behaviors"
+                 xmlns:dialogs="https://github.com/fantasticfiasco/mvvm-dialogs"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 xmlns:prism="http://prismlibrary.com/"
+                 dialogs:DialogServiceViews.IsRegistered="True"
+                 prism:ViewModelLocator.AutoWireViewModel="True"
+                 ShowMinButton="False" ShowMaxRestoreButton="False"
+                 ShowInTaskbar="False"
+                 WindowStartupLocation="CenterOwner"
+                 mc:Ignorable="d"
+                 Title="SettingsWindowView" Height="450" Width="400">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closed">
+            <i:InvokeCommandAction Command="{Binding WindowClosedCommand, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        
+    </Grid>
+</mah:MetroWindow>

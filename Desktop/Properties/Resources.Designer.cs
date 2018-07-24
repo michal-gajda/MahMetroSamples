@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Gajda.ProofOfConcept.MahMetroSample.Properties {
+namespace Gajda.ProofOfConcept.MahMetroSample.Desktop.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Gajda.ProofOfConcept.MahMetroSample.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Gajda.ProofOfConcept.MahMetroSample.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Gajda.ProofOfConcept.MahMetroSample.Desktop.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
