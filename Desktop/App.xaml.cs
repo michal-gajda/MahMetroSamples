@@ -1,11 +1,12 @@
 ﻿namespace Gajda.ProofOfConcept.MahMetroSample.Desktop
 {
-    using Gajda.ProofOfConcept.MahMetroSample.Desktop.Views;
     using MvvmDialogs;
     using Prism.Ioc;
     using Prism.Logging;
+    using Prism.Modularity;
     using Prism.Unity;
     using System.Windows;
+    using Views;
 
     /// <summary>
     /// Interaction logic for App.xaml
@@ -41,6 +42,11 @@
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterInstance<IDialogService>(new DialogService());
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            base.ConfigureModuleCatalog(moduleCatalog);
         }
     }
 }

@@ -13,6 +13,15 @@
                  prism:ViewModelLocator.AutoWireViewModel="True"
                  mc:Ignorable="d"
                  Title="{Binding Title, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Height="450" Width="800">
+    <mah:MetroWindow.Style>
+        <Style>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsClose}" Value="True">
+                    <Setter Property="behaviors:WindowBehaviors.Close" Value="True" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </mah:MetroWindow.Style>
     <mah:MetroWindow.RightWindowCommands>
         <mah:WindowCommands>
             <Button Content="Settings" Command="{Binding SettingsCommand}" />
@@ -28,6 +37,15 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}" />
+            </MenuItem>
+        </Menu>
     </Grid>
 </mah:MetroWindow>
